@@ -67,7 +67,7 @@
       <section class="main-studio">
         <div class="container hero-box">
           <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="main-btn" type="button">Заказать услугу</button>
+          <button class="main-btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!--Особенности-->
@@ -128,13 +128,28 @@
           <h2 class="joint-title">Чем мы занимаемся</h2>
           <ul class="work list">
             <li class="work-image">
+              <div class="product-wrapper">
               <img src="./images/work/box-1.jpg" alt="компьютер" width="370" height="294" />
+              <div class="title-product-wrapper">
+              <p class="title-product">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+              </div>
+              </div>
             </li>
             <li class="work-image">
+              <div class="product-wrapper">
               <img src="./images/work/box-2.jpg" alt="мобильный телефон" width="370" height="294" />
+               <div class="title-product-wrapper">
+              <p class="title-product">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
+              </div>
+              </div>
             </li>
             <li class="work-image">
+              <div class="product-wrapper">
               <img src="./images/work/box-3.jpg" alt="планшет" width="370" height="294" />
+               <div class="title-product-wrapper">
+              <p class="title-product">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+              </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -423,5 +438,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg  width="18" height="18" class="modal-close-btn-icon">
+            <use href="./images/sprite.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
